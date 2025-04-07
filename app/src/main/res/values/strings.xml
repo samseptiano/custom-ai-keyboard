@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AI generated Keyboard</string>
+    <string name="change_system_keyboard">Change system keyboard</string>
+    <string name="change_system_keyboard_description">Please change system keyboard to "keyboardApp"</string>
+    <string name="app_tutorial">How to use:\n1. change default keyboard to "KeyboardApp" at your phone settings.\n2. type some words you want to prompt.\n3.drag/block text you want to prompt.\n4. Click "AI" button at keyboard, then wait for the AI to respond.</string>
+    <string name="change_keyboard">Change keyboard</string>
+    <string name="test_keyboard">Test Keyboard</string>
+    <string name="change_color">Change color</string>
+    <string name="key_icon">Key icon</string>
+    <string name="name_english_ime">English</string>
+    <string name="name_indonesia_ime">Indonesian</string>
+</resources>

@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#000000">
+
+    <!-- Letter A -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M9,17L10,14h4l1,3h2l-4,-10h-2l-4,10h2zM11,13l1,-3 1,3h-2z" />
+
+    <!-- Letter I -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M17,7h2v10h-2z" />
+</vector>
