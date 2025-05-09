@@ -3,9 +3,9 @@
 
 Sample Custom Keyboard App with AI prompt generator.
 
-Powered by ChatGPT API.
+Powered by GEMINI API.
 
-[Sample API](https://openai.com/api/ "Sample API")
+[Sample API](https://generativelanguage.googleapis.com/ "Sample API")
 
 How to use:
 1. change default keyboard to **KeyboardApp** at your phone settings.
