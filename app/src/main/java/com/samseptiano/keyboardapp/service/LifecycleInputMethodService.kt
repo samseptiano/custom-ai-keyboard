@@ -8,6 +8,9 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ServiceLifecycleDispatcher
 import com.samseptiano.keyboardapp.ui.screens.keyboard.ComposeKeyboardView
 
+/**
+ * Created by samuel.septiano on 06/04/2025.
+ */
 abstract class LifecycleInputMethodService : InputMethodService(), LifecycleOwner {
     private val composeKeyboardView by lazy {
         ComposeKeyboardView(this)

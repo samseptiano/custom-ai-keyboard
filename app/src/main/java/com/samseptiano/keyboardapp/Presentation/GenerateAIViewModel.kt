@@ -20,15 +20,17 @@ class GenerateAIViewModel : ViewModel() {
     var isLoading = mutableStateOf(false)
 
     val generateAIResultData = mutableStateOf(GenerateAIResponseModel())
+
     init {
         generateAIResultData.value = GenerateAIResponseModel()
     }
+
     fun generateAI(prompt: String) {
         viewModelScope.launch {
             isLoading.value = true
 
             try {
-                var request = GenerateAIRequestModel();
+                val request = GenerateAIRequestModel();
 
                 val parts = Parts()
                 parts.parts = arrayListOf()
@@ -39,12 +41,10 @@ class GenerateAIViewModel : ViewModel() {
                 val response = RetrofitClient.create().postGenerateAI(BuildConfig.API_KEY, request)
                 generateAIResultData.value = response
             } catch (e: Exception) {
-                Log.d("error call API", e.localizedMessage)
                 generateAIResultData.value = GenerateAIResponseModel()
                 isLoading.value = false
 
-            }
-            finally {
+            } finally {
                 isLoading.value = false
             }
         }

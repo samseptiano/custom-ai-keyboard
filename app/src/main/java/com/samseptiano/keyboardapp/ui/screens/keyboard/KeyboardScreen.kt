@@ -72,8 +72,6 @@ fun KeyboardScreen(
     val keyboardState = remember { mutableStateOf(KeyboardState.CAPS) }
 
 
-
-
     val keysArray = when (keyboardState.value) {
         KeyboardState.CAPS -> arrayOf(
             arrayOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "0"),
@@ -144,8 +142,7 @@ fun KeyboardScreen(
                     Text("Generating with AI...", color = Color.White, fontSize = 14.sp)
                 }
             }
-        }
-        else {
+        } else {
             keysArray.forEach { row ->
                 FixedHeightBox(modifier = modifier.fillMaxWidth(), height = 60.dp) {
                     Row(modifier) {

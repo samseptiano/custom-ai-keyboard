@@ -6,7 +6,9 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-
+/**
+ * Created by samuel.septiano on 06/04/2025.
+ */
 private val DarkColorPalette = darkColors(
     primary = Green200,
     primaryVariant = Lime200,

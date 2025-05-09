@@ -8,11 +8,12 @@ import android.view.inputmethod.InputMethodManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.ui.platform.LocalContext
-import androidx.core.content.ContextCompat
 import com.samseptiano.keyboardapp.ui.screens.MainScreen
 import com.samseptiano.keyboardapp.ui.theme.KeyboardAppTheme
 
-
+/**
+ * Created by samuel.septiano on 06/04/2025.
+ */
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
             KeyboardAppTheme {
                 MainScreen(
                     onButtonClicked = {
-                        if(isThisKeyboardSetAsDefaultIME(ctx, manager)) {
+                        if (isThisKeyboardSetAsDefaultIME(ctx, manager)) {
                             ctx.startActivity(
                                 Intent(Settings.ACTION_INPUT_METHOD_SETTINGS)
                             )
@@ -38,11 +39,14 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    private fun isThisKeyboardSetAsDefaultIME(context: Context, manager: InputMethodManager): Boolean {
+    private fun isThisKeyboardSetAsDefaultIME(
+        context: Context,
+        manager: InputMethodManager
+    ): Boolean {
         var bool = true
         val list = manager.enabledInputMethodList
         list.forEach {
-            if(it.packageName == context.packageName)
+            if (it.packageName == context.packageName)
                 bool = false
         }
         return bool

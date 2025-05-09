@@ -13,13 +13,6 @@ import com.samseptiano.keyboardapp.model.response.GenerateAIResponseModel
 import com.samseptiano.keyboardapp.utils.stringToColor
 
 class ComposeKeyboardView(context: Context) : AbstractComposeView(context) {
-    /**
-     * The Jetpack Compose UI content for this view.
-     * Subclasses must implement this method to provide content. Initial composition will
-     * occur when the view becomes attached to a window or when [createComposition] is called,
-     * whichever comes first.
-     */
-
     var _keyboardVisibility = mutableStateOf(true)
 
     @Composable
@@ -36,7 +29,6 @@ class ComposeKeyboardView(context: Context) : AbstractComposeView(context) {
         val keyColor = key?.stringToColor()!!
         val textColor = text?.stringToColor()!!
 
-        // Now this will reactively run when `isKeyboardVisible` is false
         if (isKeyboardVisible) {
             LaunchedEffect(Unit) {
                 generateAIViewModel.generateAIResultData.value = GenerateAIResponseModel()

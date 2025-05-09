@@ -9,7 +9,9 @@ import androidx.savedstate.SavedStateRegistryOwner
 import androidx.savedstate.setViewTreeSavedStateRegistryOwner
 import com.samseptiano.keyboardapp.ui.screens.keyboard.ComposeKeyboardView
 
-
+/**
+ * Created by samuel.septiano on 06/04/2025.
+ */
 class KeyboardService: LifecycleInputMethodService(),
     ViewModelStoreOwner,
     SavedStateRegistryOwner{

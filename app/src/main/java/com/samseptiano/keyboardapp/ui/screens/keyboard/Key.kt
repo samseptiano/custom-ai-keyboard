@@ -98,7 +98,7 @@ fun KeyboardKey(
                             indication = null
                         ) {
                             Log.d("typing keyboard", keyboardKey)
-                            if(keyboardState.value == KeyboardState.CAPS){
+                            if (keyboardState.value == KeyboardState.CAPS) {
                                 keyboardState.value = KeyboardState.NOCAPS
                             }
                             (ctx as KeyboardService).currentInputConnection.commitText(

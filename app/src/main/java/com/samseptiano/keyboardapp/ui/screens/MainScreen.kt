@@ -23,6 +23,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.samseptiano.keyboardapp.R
 
+/**
+ * Created by samuel.septiano on 06/04/2025.
+ */
 @Composable
 fun MainScreen(
     modifier: Modifier = Modifier,

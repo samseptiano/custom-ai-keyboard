@@ -4,6 +4,10 @@ buildscript {
         retrofit_version = '2.9.0'
         livedata_version = '1.6.0'
         androidx_lifecycle_version = '2.6.1'
+        compose_material_version = '1.4.3'
+        android_material_version= '1.9.0'
+        app_compact_version = '1.6.1'
+
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
